@@ -1,0 +1,158 @@
+body {
+  height: 100%; }
+
+body {
+  background: #818181;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 18px; }
+
+.header {
+  font-size: 2em;
+  color: #1d1813;
+  font-family: "Exo2", sans-serif;
+  font-weight: 500;
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 20px; }
+
+.main_wrapper {
+  background: #fff;
+  max-width: 1200px;
+  padding: 0 130px;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  text-align: center;
+  min-height: 100%; }
+
+.content_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  color: #3c2f20;
+  margin-left: -20px; }
+
+.content_item {
+  width: calc((100% / 3) - 20px);
+  margin-left: 20px;
+  margin-bottom: 40px; }
+
+img {
+  display: block;
+  width: 100%; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  width: 100%;
+  list-style-type: none; }
+  .nav a {
+    text-decoration: none;
+    color: #77716a;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.nav_item {
+  background: #f5f3e8;
+  width: 140px;
+  height: 48px;
+  font-size: 1em;
+  text-decoration: underline dotted #77716a;
+  border: none;
+  cursor: pointer; }
+  .nav_item:hover {
+    background: #7db606; }
+  .nav_item:first-child a {
+    height: auto; }
+  .nav_item:not(:first-child) {
+    margin-left: 20px; }
+
+.nav_item-align {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.active-button {
+  background: #7db606; }
+
+.nav_item_bonesso, .nav_item_villmonte, .nav_item_cooking, .content_brand-name {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center; }
+
+.nav_item_bonesso {
+  background-image: url("../img/brand_logo_bonfesto.png"); }
+
+.nav_item_villmonte {
+  background-image: url("../img/brand_logo_vilmonte.png"); }
+
+.nav_item_cooking {
+  background-image: url("../img/brand_logo_cooking.png"); }
+
+.content_small-title {
+  font-size: .83em;
+  line-height: 32px; }
+
+.content_big-name {
+  text-decoration: underline dotted #3c2f20; }
+
+.content_big-name,
+.content_name-descr {
+  color: #3c2f20;
+  font-family: 'Exo2', sans-serif;
+  font-size: 1.66em;
+  text-transform: uppercase;
+  margin: 0; }
+
+.content_description,
+.content_name-descr {
+  font-size: .83em;
+  line-height: 18px;
+  font-weight: 300; }
+
+.content_name {
+  text-decoration: none; }
+  .content_name:hover p,
+  .content_name:hover span {
+    color: #5b84f0; }
+
+.content_description {
+  margin-top: 0; }
+
+.content_name-descr {
+  line-height: 32px;
+  border-bottom: 2.08px dotted #1d1813;
+  padding-left: 2px;
+  margin-left: -2px; }
+
+.content_brand-name {
+  background-image: url("../img/brand_logo_bonfesto.png");
+  display: block;
+  width: 72px;
+  height: 24px;
+  border: none;
+  margin: 10px 0;
+  background-position: 15px 55%;
+  background-color: #7db606; }
+
+@media screen and (max-width: 992px) {
+  .main_wrapper {
+    width: 100%;
+    padding: 0 calc(100% / 9); } }
+
+@media screen and (max-width: 576px) {
+  .content_item {
+    width: 100%; }
+  .nav {
+    flex-wrap: wrap; }
+    .nav .nav_item {
+      width: 100%;
+      margin: 2px 0; } }
